@@ -1,0 +1,38 @@
+@import './theme/dark.css';
+@import './theme/light.css';
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.pokemonCard {
+  width: 250px;
+  height: 500px;
+  border: 1px solid red;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: var(--card-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.pokemonCard > img {
+  width: 50%;
+  height: 350px;
+}
+
+.pokemonList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
